@@ -4,9 +4,15 @@ app = Flask(__name__,template_folder='templates')
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
+    user = {}
     if request.method == 'POST':
-        i = request.form.getlist('value')
-        text_field_1 = request.form.get('subject_1')
+        r1 = request.form['q1']
+        
+        # i1 = request.form.getlist('value1')
+        # i2 = request.form.getlist('value2')
+        # i3 = request.form.getlist('value3')
+        # i4 = request.form.getlist('value4')
+        # text_field_1 = request.form.get('subject_1')
         # text_field_2 = request.form.get('subject_2')
         # text_field_3 = request.form.get('subject_3')
         # text_field_4 = request.form.get('subject_4')
@@ -19,26 +25,17 @@ def index():
         # text_field_11 = request.form.get('subject_11')
         # text_field_12 = request.form.get('subject_12')
         print('====================')
-        if text_field_1 == 'exploring':
-            print('cs')
-        
-        print(
-            {
-                'text_field_1':text_field_1,
-                # 'text_field_2':text_field_2,
-                # 'text_field_3':text_field_3,
-                # 'text_field_4':text_field_4,
-                # 'text_field_5':text_field_5,
-                # 'text_field_6':text_field_6,
-                # 'text_field_7':text_field_7,
-                # 'text_field_8':text_field_8,
-                # 'text_field_9':text_field_9,
-                # 'text_field_10':text_field_10,
-                # 'text_field_10':text_field_10,
-                # 'text_field_11':text_field_11,
-                # 'text_field_12':text_field_12,
-            }
-            )
+        # user['value1'] = i1,i2
+        # user['value2'] = i2
+        # user['value3'] = i3
+        # user['value4'] = i4
+        # if user['value1'] == ['1']:
+        #     print('cs')
+        # print(user)
+        # print(type(user))
+        if 'submit' in request.form:
+            print(r1)
+
     return render_template('index.html')
 
 def test_print():
@@ -56,6 +53,8 @@ def test_print():
         'fl':'Flight attendent',
         'chef':'chef',
     }
+    user = {}
+
     for i in majors:
         print(majors[i])
 test_print()
