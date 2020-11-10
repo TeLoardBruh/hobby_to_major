@@ -49,45 +49,38 @@ q27 = "I like to experiment with better and faster ways of doing things."
 # print(major_list)
 # print(type(major_list))
 questions = {
-    q1:a1,
-    q2:'2',
-    q3:'3',
-    q4:'3',
-    q5:'3',
-    q6:'3',
-    q7:'3',
-    q8:'3',
-    q9:'3',
-    q10:'3',
-    q11:'3',
-    q12:'3',
-    q13:'3',
-    q14:'3',
-    q15:'3',
-    q16:'3',
-    q17:'3',
-    q18:'3',
-    q19:'3',
-    q20:'3',
-    q21:'3',
-    q22:'3',
-    q23:'3',
-    q24:'3',
-    q25:'3',
-    q26:'3',
-    q27:'3',
+    q1,
+    q2,
+    q3,
+    q4,
+    q5,
+    q6,
+    q7,
+    q8,
+    q9,
+    q10,
+    q11,
+    q12,
+    q13,
+    q14,
+    q15,
+    q16,
+    q17,
+    q18,
+    q19,
+    q20,
+    q21,
+    q22,
+    q23,
+    q24,
+    q25,
+    q26,
+    q27,
     }
+user_input = input("input here : ")
 
+user_list = []
+user_list.append(user_input)
 
-    # print(ans)
-    # print(type(ans))
-for i in questions:
-    # user_input  = input("please enter 1 or 2 : ")
-    # if user_input:
-    major_list = []
-    #     ans = questions[i]
-    #     major_list.append(ans)
-    # return 0
-print(major_list)
-
+print(user_list)
 # print (q1)
