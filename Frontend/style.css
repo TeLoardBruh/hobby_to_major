@@ -1,97 +1,108 @@
-body{
-    background: url("background2.png");
-    padding:0;
-    margin:0;
-}
-  .container{
-    margin: 250px 100px;
-      width: 550px;
-      height: 420px;
-      background: #ffffff;
-      border-radius: 15px;
-      position: relative;
-  }
-.container h1{
-    color: rgb(6, 160, 211);
-    font-size: 40px;
-    padding: 5px 10px;
-}
-.container p1{
-    color: rgb(40, 193, 244);
-    text-align: left;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    line-height: 3em;
-    padding: 5px 10px;
-}
-.container p2{
-    text-align: left;
-    color: rgb(245, 152, 38);
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 3em;
-    padding: 15px 10px;
-}
-.container p3{
-    color: rgb(191, 90, 2);
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 3em;
-    padding: 15px 10px;
-}
-.container p4{
-    color: rgb(247, 172, 43);
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 3em;
-    padding: 25px 10px;
-}
-.container p5{
-    color: rgb(65, 199, 7);
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 3em;
-    padding: 10px 10px;
-}
-.container p7{
-  margin-top:5px 10px ;
-    color: lightblue;
+body {
+  background: url("background2.png");
+  padding: 0;
+  margin: 0;
 }
 
-.persent{
- 
-  margin:-10px -55px;
-  color:rgb(4, 106, 169);
-  display: block;
+.container {
+  margin: 250px 100px;
+  width: 550px;
+  height: 420px;
+  background: #ffffff;
+  border-radius: 15px;
+  position: relative;
 }
-.persent1{
- 
-  margin:-10px -55px;
-  color:  rgb(198, 117, 19);
-  display: block;
+
+.container h1 {
+  color: rgb(6, 160, 211);
+  font-size: 40px;
+  padding: 5px 10px;
 }
-.persent2{
- 
-  margin:-10px -55px;
-  color:rgb(135, 86, 2);
-  display: block;
+
+.container p1 {
+  color: rgb(40, 193, 244);
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 3em;
+  padding: 5px 10px;
 }
-.persent3{
- 
-  margin:-10px -55px;
-  color:rgb(211, 118, 4);
-  display: block;
+
+.container p2 {
+  text-align: left;
+  color: rgb(245, 152, 38);
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 3em;
+  padding: 15px 10px;
 }
-.persent4{
- 
-  margin:-10px -55px;
-  color:  rgb(8, 145, 24);
+
+.container p3 {
+  color: rgb(191, 90, 2);
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 3em;
+  padding: 15px 10px;
+}
+
+.container p4 {
+  color: rgb(247, 172, 43);
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 3em;
+  padding: 25px 10px;
+}
+
+.container p5 {
+  color: rgb(65, 199, 7);
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 3em;
+  padding: 10px 10px;
+}
+
+.container p7 {
+  margin-top: 5px 10px;
+  color: lightblue;
+}
+
+.persent {
+
+  margin: -10px -55px;
+  color: rgb(4, 106, 169);
   display: block;
 }
 
+.persent1 {
 
-.rating
-{
+  margin: -10px -55px;
+  color: rgb(198, 117, 19);
+  display: block;
+}
+
+.persent2 {
+
+  margin: -10px -55px;
+  color: rgb(135, 86, 2);
+  display: block;
+}
+
+.persent3 {
+
+  margin: -10px -55px;
+  color: rgb(211, 118, 4);
+  display: block;
+}
+
+.persent4 {
+
+  margin: -10px -55px;
+  color: rgb(8, 145, 24);
+  display: block;
+}
+
+
+.rating {
   margin: 25px 10px;
   float: right;
   width: 30%;
@@ -101,8 +112,7 @@ body{
   border-radius: 10px;
 }
 
- .rating-line
-{
+.rating-line {
   width: 90%;
   height: 5px;
   border-radius: 0px;
@@ -112,8 +122,7 @@ body{
   border-radius: 10px;
 }
 
-.rating1
-{
+.rating1 {
   margin: 30px 10px;
   float: right;
   width: 30%;
@@ -123,8 +132,7 @@ body{
   border-radius: 10px;
 }
 
- .rating-line1
-{
+.rating-line1 {
   width: 40%;
   height: 5px;
   border-radius: 0px;
@@ -134,8 +142,7 @@ body{
   border-radius: 10px;
 }
 
-.rating2
-{
+.rating2 {
   margin: 35px -175px;
   float: right;
   width: 30%;
@@ -144,8 +151,8 @@ body{
   height: 5px;
   border-radius: 10px;
 }
- .rating-line2
-{
+
+.rating-line2 {
   width: 20%;
   height: 5px;
   border-radius: 0px;
@@ -155,8 +162,7 @@ body{
   border-radius: 10px;
 }
 
-.rating3
-{
+.rating3 {
   margin: 40px 10px;
   float: right;
   width: 30%;
@@ -166,8 +172,7 @@ body{
   border-radius: 10px;
 }
 
- .rating-line3
-{
+.rating-line3 {
   width: 50%;
   height: 5px;
   border-radius: 0px;
@@ -177,8 +182,7 @@ body{
   border-radius: 10px;
 }
 
-.rating4
-{
+.rating4 {
   margin: 30px -175px;
   float: right;
   width: 30%;
@@ -188,8 +192,7 @@ body{
   border-radius: 10px;
 }
 
- .rating-line4
-{
+.rating-line4 {
   width: 60%;
   height: 5px;
   border-radius: 0px;
@@ -198,40 +201,44 @@ body{
   transition: width .5s ease;
   border-radius: 10px;
 }
-.fab{
-  font-size:25px;
+
+.fab {
+  font-size: 25px;
   padding-left: 50px;
 }
-.fa-facebook{
+
+.fa-facebook {
   color: rgb(6, 139, 240);
- 
+
 }
-.fa-instagram{
+
+.fa-instagram {
   color: #ee6611;
 }
-.container1{
-  float: right;
-      margin: -380px -650px;
-      width: 610px;
-      height: 420px;
-      background: url("background3.png");
-      border-radius: 15px;
-      position: relative;
+
+.container1 {
+
+  /* width: 610px;
+  height: 420px; */
+  margin: 250px 100px;
+  background: url("background3.png");
+  border-radius: 15px;
+  /* position: relative; */
 }
-.container .box{
+
+.container1 .box {
   background: white;
-  margin:110px 20px ;
-  padding:20px 25px;
+  margin: 110px 20px;
+  padding: 20px 25px;
   font-size: 25px;
   font-family: Arial, Helvetica, sans-serif;
   color: rgb(39, 141, 230);
   border-radius: 15px;
 }
-.container .box1{
-  background:rgb(83, 83, 232);
-  float: right;
-  margin:-60px 350px ;
-  padding:9px 70px;
+
+.container1 .box1 {
+  background: rgb(83, 83, 232);
+  padding: 9px 70px;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
@@ -239,11 +246,30 @@ body{
   border-radius: 20px;
 
 }
-.container .box2{
-  background:rgb(83, 83, 232);
-  float: left;
-  margin:-60px 350px ;
-  padding:9px 70px;
+
+.container1 .box2 {
+  padding: 9px 70px;
+  background: rgb(83, 83, 232);
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: rgb(237, 237, 237);
+  border-radius: 20px;
+  margin-top: 10px;
+
+}
+.container1 .btnnext{
+  display: none;
+  background: rgb(83, 83, 232);
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: rgb(237, 237, 237);
+  border-radius: 20px;
+}
+.container1 .btnprev {
+  display: none;
+  background: rgb(83, 83, 232);
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
@@ -251,6 +277,12 @@ body{
   border-radius: 20px;
 
 }
-
-
-
+.btn-flex{
+  display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: baseline;
+  align-content: stretch;
+  
+}
