@@ -8,6 +8,7 @@
         resultsContainer = document.getElementById('quiz__results'),
         resultsText = document.getElementById('quiz__results-text'),
         radioButtons = document.getElementsByClassName('quiz__question-radio'),
+        loading = document.getElementById('loader'),
         prevButton = document.getElementById('quiz__button--prev'),
         nextButton = document.getElementById('quiz__button--next'),
         returnButton = document.getElementById('quiz__button--return-to-questions'),
@@ -563,7 +564,8 @@
             html += ['<li><a href="', majors[top5[i]].url, '" target="_blank">', top5[i], '</a></li>'].join('');
         };
         html += '</ol>';
-
+        // console.log(loading);
+        loading.style.display = "none";
         resultsText.innerHTML = html;
 
         resultsContainer.classList.remove('hide');

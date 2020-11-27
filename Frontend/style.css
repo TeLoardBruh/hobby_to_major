@@ -228,12 +228,13 @@ body {
 
 .container1 .box {
   background: white;
-  margin: 110px 20px;
+  margin: 110px ;
   padding: 20px 25px;
   font-size: 25px;
   font-family: Arial, Helvetica, sans-serif;
   color: rgb(39, 141, 230);
   border-radius: 15px;
+  width: 400px;
 }
 
 .container1 .box1 {

@@ -11,7 +11,7 @@
 	align-content: stretch;
 
 }
-.loader {
+#loader {
     color: #ff0606;
     font-size: 90px;
     text-indent: -9999em;
@@ -26,6 +26,7 @@
     transform: translateZ(0);
     -webkit-animation: load6 1.7s infinite ease, round 1.7s infinite ease;
     animation: load6 1.7s infinite ease, round 1.7s infinite ease;
+    /* display: none; */
 }
 
 @-webkit-keyframes load6 {
