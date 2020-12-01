@@ -5,12 +5,12 @@ body {
 }
 
 .container {
-  margin: 250px 100px;
-  width: 550px;
-  height: 420px;
+  /* height: 420px; 
+  width: 610px; */
   background: #ffffff;
   border-radius: 15px;
   position: relative;
+  margin-right: 20px;
 }
 
 .container h1 {
@@ -218,24 +218,31 @@ body {
 
 .container1 {
 
-  /* width: 610px;
-  height: 420px; */
-  margin: 250px 100px;
+  /* height: 420px; 
+  width: 610px; */
+  /* 
+  /* margin: 250px 100px; */
   background: url("background3.png");
   border-radius: 15px;
+  /* margin-right: 20px; */
   /* position: relative; */
 }
 
 .container1 .box {
   background: white;
-  margin: 110px ;
-  padding: 20px 25px;
+  margin-top: 95px;
+  margin-left: 10px;
+  margin-right: 10px;
+  /* 
+  padding: 20px 25px; */
   font-size: 25px;
   font-family: Arial, Helvetica, sans-serif;
   color: rgb(39, 141, 230);
   border-radius: 15px;
-  width: 400px;
-  height: 190px;
+
+}
+.container1 .box p{
+  padding: 20px;
 }
 
 .container1 .box1 {
