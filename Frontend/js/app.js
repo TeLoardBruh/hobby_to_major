@@ -561,11 +561,13 @@
             return -(majors[a].score - majors[b].score)
         }).slice(0, 3);
 
-        var html = '<p>Thanks for taking our quiz! Your top 3 majors are:</p><ol>';
+        var html = '<p5>Thanks for taking our quiz! Your top 3 majors are:</p5><br>';
         for (var i = 0; i < top5.length; i++) {
-            html += ['<li><a href="', majors[top5[i]].url, '" target="_blank">', top5[i], '</a></li>'].join('');
+            // html += ['<p1><a href="', majors[top5[i]].url, '" target="_blank">', top5[i], '</a></p1>'].join('');
+  
+            html += [`<p${i}>`, top5[i], `</p${i}>`,'<p1><a href="', majors[top5[i]].url, '" target="_blank" class="a-href-tag">', 'click here for more info', '</a></p1>','<br>'].join('');
         };
-        html += '</ol>';
+        html += '';
         // console.log(loading);
         loading.style.display = "none";
 
