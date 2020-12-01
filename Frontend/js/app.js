@@ -9,6 +9,8 @@
         resultsText = document.getElementById('quiz__results-text'),
         radioButtons = document.getElementsByClassName('quiz__question-radio'),
         loading = document.getElementById('loader'),
+        container1 = document.getElementById('container1'),
+        rating = document.getElementById('rating'),
         prevButton = document.getElementById('quiz__button--prev'),
         nextButton = document.getElementById('quiz__button--next'),
         returnButton = document.getElementById('quiz__button--return-to-questions'),
@@ -404,8 +406,8 @@
         questionContainer.classList.remove('hide');
     });
 
-    
-    
+
+
 
     function radioListener(evt) {
         // answer question with a yes or no
@@ -502,7 +504,7 @@
                 chart.datasets[0].points[i].value = score;
             }
         }
-        
+
     }
 
     /**
@@ -522,7 +524,7 @@
         questionContainer.classList.add('quiz__question--transitioning');
         setTimeout(function () {
             // update text and count
-            questionText.innerHTML = 'Question '+ (i + 1) +' : '+ '<br >' +questions[i].text;
+            questionText.innerHTML = 'Question ' + (i + 1) + ' : ' + '<br >' + questions[i].text;
             // questionCount.innerHTML = (i + 1) + ' / ' + questions.length;
             // show/hide prev button
             if (i === 0) {
@@ -566,6 +568,52 @@
         html += '</ol>';
         // console.log(loading);
         loading.style.display = "none";
+
+        var x = window.matchMedia("(max-width: 700px)")
+        var y = window.matchMedia("(max-width: 320px)")
+        var z = window.matchMedia("(max-width: 400px)")
+        if (x.matches) {
+            container1.style.display = 'none';
+            rating.style.display = "block";
+            rating.style.background = "#ffffff";
+            rating.style.borderRadius = "15px";
+            rating.style.position = "relative";
+            rating.style.marginTop = "100px";
+            rating.style.marginRight = "20px";
+            rating.style.marginLeft = "20px";
+            rating.style.width = "100%";
+            rating.style.height = "400px";
+
+        }
+        if (y.matches) {
+            container1.style.display = 'none';
+            rating.style.display = "block";
+            rating.style.background = "#ffffff";
+            rating.style.borderRadius = "15px";
+            rating.style.position = "relative";
+            rating.style.marginTop = "5px";
+            rating.style.marginRight = "20px";
+            rating.style.marginLeft = "20px";
+            rating.style.width = "100%";
+            rating.style.height = "400px";
+
+        }
+        if (z.matches) {
+            container1.style.display = 'none';
+            rating.style.display = "block";
+            rating.style.background = "#ffffff";
+            rating.style.borderRadius = "15px";
+            rating.style.position = "relative";
+            rating.style.marginTop = "10px";
+            rating.style.marginRight = "20px";
+            rating.style.marginLeft = "20px";
+            rating.style.width = "100%";
+            rating.style.height = "400px";
+
+        }
+        x.addListener(goToResults)
+        y.addListener(goToResults)
+
         resultsText.innerHTML = html;
 
         resultsContainer.classList.remove('hide');

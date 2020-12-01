@@ -1,7 +1,20 @@
 .quiz__question-radio {
-    display: none;
-}
+    /* display: none; */
 
+    /* width: 105% */
+}
+.head-text{
+    margin-left: 10px;
+}
+.text-top{
+    font-size: 40px;
+    font-weight: bolder;
+}
+.text-major{
+    font-size: 35px;
+    font-weight: bolder;
+    margin-left: 200px;
+}
 .flex {
     display: flex;
     flex-direction: row;
@@ -9,45 +22,12 @@
     justify-content: center;
     align-items: center;
     align-content: stretch;
-    margin-top: 250px;
+    /* margin-top: 250px; */
 
 }
 
-@media screen and (max-width: 1024px) {
-    .flex {
-        margin-top: 20px;
-    }
 
-}
 
-@media screen and (max-width: 768px) {
-    .flex{
-        flex-direction: column; 
-    }
-    .container1{
-        width: 100%;
-    }
-    .container1 .box {
-        margin-left: 10px;
-    }
-
-    .container1 .box p {
-        padding: 5px;
-
-    }
-}
-
-/* @media screen and (min-width: 425px) {
-
-    .container {
-        width: 100%;
-    }
-
-    .container1 {
-        width: 100%;
-
-    }
-} */
 
 #loader {
     color: #E77250;
