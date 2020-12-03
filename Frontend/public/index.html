@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Major Discover</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/65c40f4d90.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/container1.css">
+    <meta property="og:url"           content="https://qa-to-major.web.app/" />
+    <meta property="og:description" content="ស្វែងរកជំនាញ" />
+
+    <meta property="og:image" content="https://images.pexels.com/photos/5088008/pexels-photo-5088008.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" />
+
+    
+</head>
+
+<body>
+    <div id="fb-root"></div>
+
+    <script>
+            window.fbAsyncInit = function() {
+              FB.init({
+                appId      : '316339922825309',
+                cookie     : true,
+                xfbml      : true,
+                version    : 'v9.0'
+              });
+                
+              FB.AppEvents.logPageView();   
+                
+            };
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <div class="head-text">
+        <p class="text-top">Explore your</p>
+        <p class="text-major">major here</p>
+    </div>
+    <div class="flex">
+        <div class="container" id="rating">
+            <h1>Calculation Result:</h1>
+            <div id="loader">Loading...</div>
+            <!-- results of quiz -->
+            <div id="quiz__results" class="quiz__results quiz__wrap hide">
+                <div id="quiz__results-text" class="quiz__results-text" style="margin-left: 10px;">
+
+                </div>
+
+
+            </div>
+            <!-- <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fqa-to-major.web.app"
+                target="_blank" rel="noopener">
+                <i class="fab fa-facebook">Share</i>
+            </a> -->
+            <center>
+                <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fqa-to-major.web.app%2F&layout=button&size=large&appId=316339922825309&width=77&height=28" width="77" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+            </center>
+            
+
+        </div>
+        <div class="container1" id="container1">
+
+            <div id="quiz__question" class="quiz__question quiz__wrap">
+                <div class="quiz__question-transition-wrap">
+                    <!-- Question -->
+                    <div class="box">
+
+                        <b>
+
+                            <p id="quiz__question-text" class="quiz__question-text quiz__p">
+                                I enjoy learning about how
+                                the human body and natural world work.</p>
+                        </b>
+
+                    </div>
+                    <!-- Yes -->
+                    <div class="btn-flex">
+                        <button class="box1">
+                            <input type="radio" class="quiz__question-radio" name="quiz__question-radio"
+                                id="quiz__question-radio--yes">
+                            <label class="quiz__question-label button button--strong"
+                                for="quiz__question-radio--yes">Yes</label>
+                        </button>
+                        <!-- No -->
+                        <button class="box2">
+                            <input type="radio" class="quiz__question-radio" name="quiz__question-radio"
+                                id="quiz__question-radio--no">
+                            <label class="quiz__question-label button" for="quiz__question-radio--no">No</label>
+                        </button>
+                    </div>
+                </div>
+                <!-- prev/next -->
+                <button id="quiz__button--next" class="quiz__button button button--gray btnnext">›</button>
+                <button id="quiz__button--prev"
+                    class="quiz__button quiz__button--prev button button--gray hide btnprev">‹</button>
+                <!-- 1/30 -->
+                <div id="quiz__question-count" class="quiz__question-count"></div>
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-firestore.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-analytics.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyCv5ftWd7LWbxA7b4arpX3HSgLpZyTHeL8",
+            authDomain: "qa-to-major.firebaseapp.com",
+            projectId: "qa-to-major",
+            storageBucket: "qa-to-major.appspot.com",
+            messagingSenderId: "394475582318",
+            appId: "1:394475582318:web:af57c5fa104b37924c077f",
+            measurementId: "G-2JNDP3P4PW"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore()
+        db.settings({
+            timestampsInSnapshots: true
+        });
+        firebase.analytics();
+    </script>
+    <!-- <script src="./js/server.js"></script> -->
+
+    <script src="./js/app.js"></script>
+
+</body>
+
+</html>
